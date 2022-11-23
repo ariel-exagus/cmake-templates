@@ -8,3 +8,9 @@ project(basic_template)
 add_executable(${PROJECT_NAME}
     main.cpp
 )
+
+# specify the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+#In windows, use the next command to generate de MakeFile: cmake .. -G "MinGW Makefiles"
